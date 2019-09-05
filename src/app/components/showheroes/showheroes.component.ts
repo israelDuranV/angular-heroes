@@ -16,7 +16,6 @@ export class ShowheroesComponent implements OnInit {
     }
 
   ngOnInit() {
-   
     this.actiavatedRoute.params.subscribe( params=>{
       this.termino = params['name'];
       this.heroes = this._heroesService.buscarHeroes(params['name']);  
